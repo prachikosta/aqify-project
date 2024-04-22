@@ -3,7 +3,8 @@
     padding: 0%;
 }
 body{
-    font-family: 'Crimson Pro', serif;
+  background-image: linear-gradient(to right top, #f813e7, #ed2ced, #e13bf2, #d547f7, #c850fb, #bb4cfb, #ad49fb, #9e46fb, #8937f8, #6f29f5, #4f1af2, #0e09f0);
+  font-family: 'Crimson Pro', serif;
 }
 #logo-bar{
     display: inline-block;
@@ -21,20 +22,24 @@ body{
     font-size: 5vh;
     font-weight: bolder;
     display: inline-block;
-    color: green;
+    color: rgb(250, 252, 250);
 }
 #card{
     color: white;
     text-align: center;
     /* display: inline-block;*/
     position: relative;
+    backdrop-filter:blur(5px);
+    background-blend-mode: lighten;
+    background-image: linear-gradient(to right top, #f813e9c1, #ed2cedb3, #e03bf2a1, #d447f7bd, #c850fbba, #bb4cfbb7, #ae49fbc6, #9e46fb, #8837f8c7, #7029f5c2, #501af2c5, #0d09f0b8);
+    box-shadow: -5px -5px 10px rgb(66, 65, 65);
     top: 0vh;
     left: 35vw;
     width: 25vw;
     height: fit-content;
     padding: 2vh 4vw;
-    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-    border: none;
+    border: 1.5px solid black;
+    border-color:linear-gradient(to right top, #f813e9c1, #ed2cedb3, #e03bf2a1, #d447f7bd, #c850fbba, #bb4cfbb7, #ae49fbc6, #9e46fb, #8837f8c7, #7029f5c2, #501af2c5, #0d09f0b8);
     border-radius: 20px;
 }
 .search-bar{
