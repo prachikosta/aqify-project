@@ -51,8 +51,17 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
             error: function(jqXHR, textStatus, errorThrown) {
-                // If there's an error in the request, log the error message
-                console.error('Error: ', textStatus, errorThrown);
+                // If there's an error in the request
+                if (jqXHR.status === 404) {
+                    console.error('City not found');
+                    // Display an error message to the user
+                    alert('City not found. Please enter a valid city name.');
+                } else {
+                    // Log the error message
+                    console.error('Error: ', textStatus, errorThrown);
+                    // Display a generic error message to the user
+                    document.querySelector('.city').innerHTML = "Sorry! Not found.";
+                }
             }
         });
     });
